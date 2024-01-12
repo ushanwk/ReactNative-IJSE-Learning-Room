@@ -1,11 +1,11 @@
 import React, {useState} from "react";
-import {Text, TextInput, View} from "react-native";
+import {Button, Text, TextInput, View} from "react-native";
 import {InputField} from "./InputField.tsx";
 
 
 export const SignUpForm = () => {
 
-    const [name, setName] = useState("");
+    const [Fname, setFname] = useState('');
 
     return (
         <View style={{margin: 30}}>
@@ -13,14 +13,18 @@ export const SignUpForm = () => {
 
             <InputField
                 label="First Name"
-                onChange={()=>{}}
-                error="Error"
+                value={Fname}
+                getText={(value)=>{
+                    setFname(value)
+                }}
+
             />
 
-            <InputField
-                label="Last Name"
-                onChange={()=>{}}
-                error="Error"
+            <Button
+                title="Submit"
+                onPress={()=>{
+                    console.log(Fname)
+                }}
             />
         </View>
     );

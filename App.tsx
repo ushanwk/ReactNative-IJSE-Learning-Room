@@ -20,16 +20,6 @@ function App(): React.JSX.Element {
 
   return (
     <SafeAreaView>
-        {/*<TextInput*/}
-        {/*    style={{borderColor: 'blue', borderWidth: 1, margin: 5}}*/}
-        {/*    value={title}*/}
-        {/*    onChange={(e)=>{setTitle(e.nativeEvent.text)}}*/}
-        {/*/>*/}
-
-        {/*<CustomTitle title={"Hello IJSE"} subTitle={"Sub 1"}/>*/}
-        {/*<CustomTitle title={"Hello IJSE"} subTitle={"Sub 1"} marginBottom={55}/>*/}
-        {/*<CustomTitle title={"Hello IJSE"} subTitle={"Sub 1"}/>*/}
-
         <SignUpForm/>
     </SafeAreaView>
   );
