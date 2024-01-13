@@ -27,7 +27,6 @@ export const InputField = ({label, error, value, getText}: InputFieldProps) => {
             {
                 error?(<Text style={{color: 'red', marginTop: 4, marginLeft: 5}}>{error}</Text>):null
             }
-
         </View>
     );
 };

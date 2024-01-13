@@ -12,6 +12,7 @@ import {
 } from 'react-native';
 import {CustomTitle} from "./src/components/CustomTitle.tsx";
 import {SignUpForm} from "./src/components/SignUpForm.tsx";
+import {SigninPage} from "./src/pages/SigninPage.tsx";
 
 
 function App(): React.JSX.Element {
@@ -20,7 +21,7 @@ function App(): React.JSX.Element {
 
   return (
     <SafeAreaView>
-        <SignUpForm/>
+        <SigninPage/>
     </SafeAreaView>
   );
 }
