@@ -1,6 +1,7 @@
 import {Text, View} from "react-native";
 import {TextField} from "../components/TextField.tsx";
 import {useState} from "react";
+import {Button} from "../components/Button.tsx";
 
 export function SigninPage() {
 
@@ -25,6 +26,8 @@ export function SigninPage() {
                     setValue={(value)=>{setPassword(value)}}
                 />
             </View>
+
+            <Button/>
 
         </View>
     );
