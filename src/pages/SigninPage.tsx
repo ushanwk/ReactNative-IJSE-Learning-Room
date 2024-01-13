@@ -27,7 +27,13 @@ export function SigninPage() {
                 />
             </View>
 
-            <Button/>
+            <Button
+                label="Sign In"
+                onClicked={() => {
+                    console.log(username)
+                    console.log(password)
+                }}
+            />
 
         </View>
     );
