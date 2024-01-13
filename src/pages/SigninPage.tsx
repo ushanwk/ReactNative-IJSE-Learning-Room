@@ -1,4 +1,4 @@
-import {Text, View} from "react-native";
+import {Alert, Text, View} from "react-native";
 import {TextField} from "../components/TextField.tsx";
 import {useState} from "react";
 import {Button} from "../components/Button.tsx";
@@ -30,8 +30,11 @@ export function SigninPage() {
             <Button
                 label="Sign In"
                 onClicked={() => {
-                    console.log(username)
-                    console.log(password)
+                    if(username === "Ushan" && password === "1234"){
+                        Alert.alert("Login Successful")
+                    }else{
+                        Alert.alert("Something went wrong...")
+                    }
                 }}
             />
 
